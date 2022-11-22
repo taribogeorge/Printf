@@ -69,7 +69,7 @@ int print_X(va_list X)
  *
  * Return: base ^ exponent
  */
-static unsigned long pow(unsigned int base, unsigned int exponent)
+static unsigned long _pow(unsigned int base, unsigned int exponent)
 {
 	unsigned int i;
 	unsigned long ans = base;
@@ -91,6 +91,7 @@ int print_p(va_list p)
 {
 	int count = 0;
 	unsigned int a[16];
+	unsigned int i, sum;
 	unsigned long n, m;
 	char *str = "(nil)";
 

@@ -50,7 +50,7 @@ int print_d(va_list d)
 	int a[10];
 	int j, m, n, sum, count;
 
-	n = va_arg(d, inf);
+	n = va_arg(d, int);
 	count = 0;
 	m = 1000000000;
 	a[0] = n / m;
